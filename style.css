@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: bisque;
+  background-image: url(pexels-karolina-grabowska-5412200.jpg);
+   background-size: cover;        /* Make image cover full screen */
+  background-position: center;   /* Center the image */
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: flex-end;  /* 👈 aligns to right */
+  align-items: center;        /* 👈 vertically center */
+  padding-right: 50px;        /* 👈 space from right edge */
+}
+
+.calculator {
+  background: rgba(24, 23, 23, 0.85);
+  padding: 100px;
+  border-radius: 50px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.display {
+  width: 80%;
+  height: 50px;
+  font-size: 1.5em;
+  text-align: right;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #e41919;
+  border-radius: 5px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  gap: 10px;
+}
+
+button {
+  height: 50px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+
+button.operator {
+  background-color: #f9a825;
+  color: white;
+}
+
+button.equal {
+  background-color: #43a047;
+  color: white;
+  grid-column: span 2;
+}
+
+button.clear {
+  background-color: #e53935;
+  color: white;
+  grid-column: span 2;
+}
